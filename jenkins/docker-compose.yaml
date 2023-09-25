@@ -13,7 +13,9 @@ services:
       - ./jenkins-docker-certs:/certs/client
       - ./jenkins-data:/var/jenkins_home
     networks:
-      - jenkins-network
+      jenkins-network:
+          aliases:
+            - docker
 
   jenkins:
     build: .

@@ -11,3 +11,4 @@ jenkins/configuration/workspace/
 jenkins/jenkins-data/workspace/
 jenkins/jenkins-data/.cache/
 jenkins/jenkins-data/caches/
+jenkins/jenkins-data/jobs/
