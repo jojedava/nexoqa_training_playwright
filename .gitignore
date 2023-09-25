@@ -8,3 +8,4 @@ playwright/server/node_modules/
 .DS_Store
 
 jenkins/configuration/workspace/
+jenkins/jenkins-data/workspace/

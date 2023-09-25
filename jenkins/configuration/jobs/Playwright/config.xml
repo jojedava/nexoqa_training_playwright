@@ -35,10 +35,11 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.Shell>
-      <command></command>
-      <configuredLocalRules/>
-    </hudson.tasks.Shell>
+    <jenkins.plugins.docker__compose.DockerComposeBuilder plugin="docker-compose-build-step@1.0">
+      <useCustomDockerComposeFile>true</useCustomDockerComposeFile>
+      <dockerComposeFile>playwright/docker-compose.yml</dockerComposeFile>
+      <option class="jenkins.plugins.docker_compose.StartAllServices"/>
+    </jenkins.plugins.docker__compose.DockerComposeBuilder>
   </builders>
   <publishers/>
   <buildWrappers/>

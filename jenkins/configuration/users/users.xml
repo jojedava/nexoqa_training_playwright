@@ -3,6 +3,10 @@
   <version>1</version>
   <idToDirectoryNameMap class="concurrent-hash-map">
     <entry>
+      <string>jojedava</string>
+      <string>jojedava_9126152498104919577</string>
+    </entry>
+    <entry>
       <string>nexo-training</string>
       <string>nexotraining_4583926611798940295</string>
     </entry>

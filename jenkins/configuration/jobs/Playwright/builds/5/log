@@ -1,0 +1,24 @@
+Started by user [8mha:////4LwQ1zkarDYTHa6kQlqfiEpQBFQMrx3f732Jk2f45+5sAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9vNSKfN2SosTMPKApAEl48RnIAAAA[0mnexo-training
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Playwright
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Playwright/playwright/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nexoqa/nexoqa_training_playwright.git # timeout=10
+Fetching upstream changes from https://github.com/nexoqa/nexoqa_training_playwright.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/nexoqa/nexoqa_training_playwright.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision d40b8fc07ce7fd4ddaf18d66ee72b3fa73c40221 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d40b8fc07ce7fd4ddaf18d66ee72b3fa73c40221 # timeout=10
+Commit message: "Jenkins config"
+ > git rev-list --no-walk d40b8fc07ce7fd4ddaf18d66ee72b3fa73c40221 # timeout=10
+[Playwright] $ /bin/sh -xe /tmp/jenkins5376921607844911888.sh
++ cd playwright
++ docker-compose up -d
+/tmp/jenkins5376921607844911888.sh: 3: docker-compose: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
