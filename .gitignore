@@ -1,0 +1,10 @@
+/node_modules/
+/package-lock.json
+.idea/*
+output
+playwright/client/node_modules/
+playwright/server/node_modules/
+*.iml
+.DS_Store
+
+jenkins/configuration/workspace/

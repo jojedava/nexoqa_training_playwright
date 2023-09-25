@@ -1,0 +1,32 @@
+version: '3'
+services:
+  server:
+    image: node:16
+    working_dir: /home/node/app
+    container_name: nexoqa-eng-adv-server
+    volumes:
+      - ./server:/home/node/app
+    ports:
+      - 8081:8081
+    command: "npm start"
+    healthcheck:
+      test: /home/node/app/healthcheck.sh
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  client:
+    image: node:16
+    working_dir: /home/node/app
+    container_name: nexoqa-eng-adv-client
+    environment:
+      - NODE_ENV=testing
+    volumes:
+      - ./client:/home/node/app
+    ports:
+      - 8080:8080
+    command: "npm start"
+    depends_on:
+      server:
+        condition: service_healthy
+
+

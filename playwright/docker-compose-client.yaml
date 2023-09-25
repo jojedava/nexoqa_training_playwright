@@ -1,0 +1,15 @@
+version: '3'
+services:
+  client-alone:
+    image: node:16
+    working_dir: /home/node/app
+    container_name: nexoqa-eng-adv-client-alone
+    environment:
+      - NODE_ENV=testing
+    volumes:
+      - ./client:/home/node/app
+    ports:
+      - 8080:8080
+    command: "npm start"
+
+
