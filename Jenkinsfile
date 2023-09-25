@@ -5,6 +5,14 @@ pipeline{
         }
     }
     stages{
+        stage('Install playwright'){
+            steps{
+                sh '''
+                    cd playwright
+                    npm i -D @playwright/test
+                '''
+            }
+        }
         stage('Test'){
             steps{
                 sh '''
