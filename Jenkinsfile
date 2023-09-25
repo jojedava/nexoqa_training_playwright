@@ -20,8 +20,8 @@ pipeline{
                 '''
             }
             post {
-                success {
-                archiveArtifacts(artifacts: 'homepage-*.png', followSymlinks: false)
+                fail {
+                archiveArtifacts(artifacts: '*.png', followSymlinks: false)
                 sh 'rm -rf *.png'
                 }
             }
