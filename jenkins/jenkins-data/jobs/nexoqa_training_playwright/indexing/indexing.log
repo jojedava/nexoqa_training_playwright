@@ -1,0 +1,25 @@
+Started by user [8mha:////4CgZogUtUseEikqbKnLJh4sCjdRl/VEoQ4+1+E3OZ7tBAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYu/dLi1CL9ktTiEgDdLbGyvwAAAA==[0mnexo-training
+[Mon Sep 25 18:33:33 UTC 2023] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git ls-remote --symref -- https://github.com/nexoqa/nexoqa_training_playwright.git # timeout=10
+Creating git repository in /var/jenkins_home/caches/git-4559a16ff5b46dfd0afb1d274f944d1d
+ > git init /var/jenkins_home/caches/git-4559a16ff5b46dfd0afb1d274f944d1d # timeout=10
+Setting origin to https://github.com/nexoqa/nexoqa_training_playwright.git
+ > git config remote.origin.url https://github.com/nexoqa/nexoqa_training_playwright.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git ls-remote -h -- https://github.com/nexoqa/nexoqa_training_playwright.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch main
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+Processed 1 branches
+[Mon Sep 25 18:35:47 UTC 2023] Finished branch indexing. Indexing took 2 min 13 sec
+Finished: SUCCESS
