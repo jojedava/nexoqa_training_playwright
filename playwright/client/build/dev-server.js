@@ -5,6 +5,13 @@ if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
+if (!process.env.BASE_URL) {
+  process.env.BASE_URL = JSON.parse(config.dev.env.BASE_URL)
+}
+else{
+  config.dev.env.BASE_URL=process.env.BASE_URL
+}
+
 var opn = require('opn')
 var path = require('path')
 var express = require('express')

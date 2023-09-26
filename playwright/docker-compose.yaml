@@ -20,13 +20,14 @@ services:
     container_name: nexoqa-eng-adv-client
     environment:
       - NODE_ENV=testing
+      # - BASE_URL="http://[IP]:8081/"
     volumes:
       - ./client:/home/node/app
     ports:
       - 8080:8080
     command: "npm start"
-    depends_on:
-      - server
+    # depends_on:
+    #   - server
     networks:
       jenkins-network:
         aliases:
