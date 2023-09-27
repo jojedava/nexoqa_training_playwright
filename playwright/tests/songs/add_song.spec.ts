@@ -3,7 +3,7 @@ import { HomePage } from '../page_objects/home_page';
 import { SongPage } from '../page_objects/song_page';
 import { addSong } from './song_helper';
 
-test('Add new song', async ({ page }) => {
+test('Add new song', async ({ page, request }) => {
   await page.goto('http://192.168.1.45:8080/');
   await addSong(
     page,
@@ -21,4 +21,5 @@ test('Add new song', async ({ page }) => {
   await expect(homePage.songs.last().locator('div.song-title')).toContainText(
     'Song 1'
   );
+  await request.get('http://192.168.1.45:8081/reset');
 });
