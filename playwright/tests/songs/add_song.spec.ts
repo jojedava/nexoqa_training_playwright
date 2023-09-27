@@ -17,7 +17,8 @@ test('Add new song', async ({ page }) => {
     'lyrics'
   );
   var homePage: HomePage = new HomePage(page);
-  await expect(homePage.songs.last().locator('song-title')).toContainText(
+  await page.waitForSelector('div.song');
+  await expect(homePage.songs.last().locator('div.song-title')).toContainText(
     'Song 1'
   );
 });
