@@ -1,13 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../page_objects/home_page';
-import { AddSongPage } from '../page_objects/add_song_page';
+import { SongPage } from '../page_objects/song_page';
+import { addSong } from './song_helper';
 
 test('Add new song', async ({ page }) => {
-  await page.goto('http://192.168.1.101:8080/');
-  var homePage: HomePage = new HomePage(page);
-  await homePage.addButton.click();
-  var addSongPage: AddSongPage = new AddSongPage(page);
-  await addSongPage.fillSong(
+  await page.goto('http://192.168.1.45:8080/');
+  await addSong(
+    page,
     'Song 1',
     'Artist 1',
     'Genre 1',
@@ -17,6 +16,8 @@ test('Add new song', async ({ page }) => {
     'TAB',
     'lyrics'
   );
-  await addSongPage.button.click();
-  await expect(homePage.songs.last()).toContainText('Song 1');
+  var homePage: HomePage = new HomePage(page);
+  await expect(homePage.songs.last().locator('song-title')).toContainText(
+    'Song 1'
+  );
 });

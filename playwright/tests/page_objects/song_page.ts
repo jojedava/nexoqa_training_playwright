@@ -1,5 +1,5 @@
 import { Page, Locator } from '@playwright/test';
-export class AddSongPage {
+export class SongPage {
   readonly page: Page;
   readonly title: Locator;
   readonly artist: Locator;
