@@ -5,7 +5,7 @@ import { SongViewPage } from '../page_objects/song_view_page';
 import { EditSongPage } from '../page_objects/edit_song_page';
 
 test('Edit new song', async ({ page, request }) => {
-  await page.goto('http://192.168.1.45:8080/');
+  await page.goto('http://192.168.1.102:8080/');
   //Precondition
   await addSong(
     page,
@@ -37,5 +37,5 @@ test('Edit new song', async ({ page, request }) => {
   );
   await editSongPage.saveButton.click();
   await expect(songViewPage.title).toContainText('Song A');
-  await request.get('http://192.168.1.45:8081/reset');
+  await request.get('http://192.168.1.102:8081/reset');
 });

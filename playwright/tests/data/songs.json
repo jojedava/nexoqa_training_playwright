@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Drop it",
+    "artist": "3 Steps Ahead",
+    "genre": "Hardcore",
+    "album": "Drop it",
+    "albumImageUrl": "https://img.discogs.com/H7zIgOQXI5e7yXB5---U5n1kOXc=/fit-in/303x301/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-17264-1133778698.jpeg.jpg",
+    "youtubeId": "KB09paeV_aE",
+    "lyrics": "",
+    "tab": "",
+    "createdAt": "2018-02-13T12:56:24.432Z",
+    "updatedAt": "2018-02-13T12:56:24.432Z"
+  },
+  {
+    "id": 2,
+    "title": "I Ain't Goin' Out Like That",
+    "artist": "Cypress Hill",
+    "genre": "Rap",
+    "album": "Black Sunday",
+    "albumImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Cypress_Hill-Black_Sunday.jpg",
+    "youtubeId": "q7p-ihYOG5s",
+    "lyrics": "",
+    "tab": "",
+    "createdAt": "2018-02-13T12:56:24.432Z",
+    "updatedAt": "2018-02-13T12:56:24.432Z"
+  }
+]

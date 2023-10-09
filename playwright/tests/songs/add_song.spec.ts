@@ -4,7 +4,7 @@ import { SongPage } from '../page_objects/song_page';
 import { addSong } from './song_helper';
 
 test('Add new song', async ({ page, request }) => {
-  await page.goto('http://192.168.1.45:8080/');
+  await page.goto('http://192.168.1.102:8080/');
   await addSong(
     page,
     'Song 1',
@@ -21,5 +21,5 @@ test('Add new song', async ({ page, request }) => {
   await expect(homePage.songs.last().locator('div.song-title')).toContainText(
     'Song 1'
   );
-  await request.get('http://192.168.1.45:8081/reset');
+  await request.get('http://192.168.1.102:8081/reset');
 });
